@@ -1,10 +1,12 @@
 #!/usr/bin/env python3
-"""Auth module for the API
+"""
+Auth module for the API
 """
 import re
 from os import getenv
-from flask import request
 from typing import List, TypeVar
+
+from flask import request
 
 
 class Auth:
@@ -42,8 +44,8 @@ class Auth:
 
     def current_user(self, request=None) -> TypeVar('User'):
         """
-        Returns: 
-            - the current user.
+        Return:
+            - the current user
         """
         return None
 
